@@ -7,16 +7,51 @@ JavaScript Reduce Lab
 2. Practice iterating over different abstractions
 
 ## Introduction
+By now, we know that `.reduce()` is nothing more than a function to reduce an array to another value, such as a number,
+a string, another array, ... This allows us to easily count word occurrences, calculate a total sum of product prices,
+and so on.
 
-- Briefly review what students learned while writing their own `reduce()`
-- Have them go back (https://github.com/learn-co-curriculum/javascript-reduce) and review if they don't feel ready for a lab
+In this lab, we'll focus on flexing those `reduce()` muscles! Remember — `Array.prototype.reduce()` takes two
+arguments: the `callback` and the `initialValue`.
 
-##
+## Technologic
+![Pat and Dave](http://i.imgur.com/UG8wcJo.gifv)
 
-- Test students implementation using different inputs
-- Be sure to test failures! Null collections should not work, for example
-- BUT the students' solution should work with arrays as well as objects
-- Don't just test the students' `reduce()`, have them write other functions that make use of it (developing the narrative arc of the lesson)
+Pat and Dave are hard at work in the battery factory. They've assembled several batches of batteries today. Let's count
+how many assembled batteries we ended up with, while they go out for an oil change.
+
+* Create a new variable called `totalBatteries` which is the sum of all of the battery amounts in the `batteryBatches`
+array. Naturally, use `.reduce()` for this!
+
+
+## Perfecting the monologue
+![Walter White](https://media.giphy.com/media/YyOQPNOesPtWo/giphy.gif)
+
+One of the most iconic scenes in Breaking Bad is where Walter White reveals to his wife, Skyler, how deeply entrenched
+he is in the meth business. Writing this monologue must have been a pain. For future episodes, it would be great if the
+show's writer could get an overview of the amount of sentences mapped by word count.
+
+For example, say we have these two lines:
+
+```js
+const lines = [
+  'Who are you talking to right now?',
+  'Who is it you think you see?',
+  'Do you know how much I make a year?',
+];
+```
+
+Our output would look like this:
+
+```
+{ '7': 2, '9': 1 }
+```
+
+This output can be interpreted as: _'We have two sentences with 7 words, and one sentence with 9 words'_. That should
+help the writer to write even more dramatic monologues!
+
+* Create a new variable called `wordCountMap` that reduces the `monologueLines` to a map that resembles the output as
+shown above.
 
 ## Resources
 
