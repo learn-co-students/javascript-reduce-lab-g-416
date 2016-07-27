@@ -12,7 +12,10 @@ before(function(done) {
     }
   );
 
-  const html = fs.readFileSync(path.resolve(__dirname, '..', 'index.html'))
+  const html = fs.readFileSync(
+    path.resolve(__dirname, '..', 'index.html'),
+    'utf-8'
+  )
 
   jsdom.env(html, [], {src: babelResult.code}, (err, window) => {
     if (err) {
