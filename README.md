@@ -15,7 +15,7 @@ In this lab, we'll focus on flexing those `reduce()` muscles! Remember — `Arra
 arguments: the `callback` and the `initialValue`.
 
 ## Technologic
-![Pat and Dave](http://i.imgur.com/UG8wcJo.gifv)
+![Pat and Dave](http://i.imgur.com/UG8wcJo.gif)
 
 Pat and Dave are hard at work in the battery factory. They've assembled several batches of batteries today. Let's count
 how many assembled batteries we ended up with, while they go out for an oil change.
@@ -31,7 +31,7 @@ One of the most iconic scenes in Breaking Bad is where Walter White reveals to h
 he is in the meth business. Writing this monologue must have been a pain. For future episodes, it would be great if the
 show's writer could get an overview of the amount of sentences mapped by word count.
 
-For example, say we have these two lines:
+For example, say we have these three lines:
 
 ```js
 const lines = [
