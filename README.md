@@ -1,14 +1,15 @@
 JavaScript Reduce Lab
 ---
 
-## Objectives
+## Overview
 
-1. Practice using a reduce function
-2. Practice iterating over different abstractions
+This lab will give you practice using a reduce function and iterating over different abstractions. 
+
 
 ## Introduction
+
 By now, we know that `.reduce()` is nothing more than a function to reduce an array to another value, such as a number,
-a string, another array, ... This allows us to easily count word occurrences, calculate a total sum of product prices,
+a string, or another array. This allows us to easily count word occurrences, calculate a total sum of product prices,
 and so on.
 
 In this lab, we'll focus on flexing those `reduce()` muscles! Remember — `Array.prototype.reduce()` takes two
@@ -55,4 +56,4 @@ shown above.
 
 ## Resources
 
-- [MDN: Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+* [MDN: Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
