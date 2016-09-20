@@ -8,20 +8,15 @@ This lab will give you practice using a reduce function and iterating over diffe
 
 ## Introduction
 
-By now, we know that `.reduce()` is nothing more than a function to reduce an array to another value, such as a number,
-a string, or another array. This allows us to easily count word occurrences, calculate a total sum of product prices,
-and so on.
+By now, we know that `.reduce()` is nothing more than a function to reduce an array to another value, such as a number, a string, or another array. This allows us to easily count word occurrences, calculate a total sum of product prices, and so on.
 
-In this lab, we'll focus on flexing those `reduce()` muscles! Remember — `Array.prototype.reduce()` takes two
-arguments: the `callback` and the `initialValue`.
+In this lab, we'll focus on flexing those `reduce()` muscles! Remember — `Array.prototype.reduce()` takes two arguments: the `callback` and the `initialValue`.
 
 ## Technologic
 
-Pat and Dave are hard at work in the battery factory. They've assembled several batches of batteries today. Let's count
-how many assembled batteries we ended up with, while they go out for an oil change.
+Pat and Dave are hard at work in the battery factory. They've assembled several batches of batteries today. Let's count how many assembled batteries we ended up with, while they go out for an oil change.
 
-* Create a new variable called `totalBatteries` which is the sum of all of the battery amounts in the `batteryBatches`
-array. Naturally, use `.reduce()` for this!
+* Create a new variable called `totalBatteries` which is the sum of all of the battery amounts in the `batteryBatches` array. Naturally, use `.reduce()` for this!
 
 
 ## Perfecting the monologue
@@ -45,11 +40,9 @@ Our output would look like this:
 { '7': 2, '9': 1 }
 ```
 
-This output can be interpreted as: _'We have two sentences with 7 words, and one sentence with 9 words'_. That should
-help the writer to write even more dramatic monologues!
+This output can be interpreted as: _'We have two sentences with 7 words, and one sentence with 9 words'_. That should help the writer to write even more dramatic monologues!
 
-* Create a new variable called `wordCountMap` that reduces the `monologueLines` to a map that resembles the output as
-shown above.
+* Create a new variable called `wordCountMap` that reduces the `monologueLines` to a map that resembles the output as shown above.
 
 ## Resources
 
