@@ -22,8 +22,12 @@ var totalBatteries = batteryBatches.reduce(function(a, b) {
 }, 0);
 
 
-var wordCountMap = monlogueLines.map(function(a, b) {
-  console.log(a.length)
-  console.log(b.length)+++++++sdfsdfa
-  return a.length + b.length;
-}, 0)
+const wordCountMap = monologueLines.reduce((hash, sentence) => {
+  const wordCount = sentence.split(' ').length;
+  if (!hash[wordCount]) {
+    hash[wordCount] = 0;
+  }
+  hash[wordCount]++;
+
+  return hash;
+}, {});
