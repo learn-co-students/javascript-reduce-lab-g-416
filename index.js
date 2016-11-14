@@ -15,4 +15,39 @@ const monologueLines = [
   'A guy opens his door and gets shot and you think that of me?',
   'No.',
   'I am the one who knocks!'
-];
+]
+
+
+const totalBatteries = batteryBatches.reduce(counter, 0);
+
+function counter(number, start) {
+  return number + start;
+}
+
+
+// const wordCountMap = monologueLines.reduce((result, string) => {
+//   const current = wordCount(string)
+//   if (result[current]){
+//     result.current ++;
+//   }else{
+//     result.current = 1;
+//   }
+//   return result;
+// }, {});
+//
+//
+// function wordCount(str) {
+//   return str.split(" ").length;
+// }
+
+const wordCountMap = monologueLines.reduce((map, sentence) => {
+  const wordCount = sentence.split(' ').length;
+
+  if (!map[wordCount]) {
+    map[wordCount] = 0;
+  }
+
+  map[wordCount]++;
+
+  return map;
+}, {});
