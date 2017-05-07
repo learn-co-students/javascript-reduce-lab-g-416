@@ -1,3 +1,4 @@
+'use strict';
 const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
 
 const monologueLines = [
@@ -16,3 +17,17 @@ const monologueLines = [
   'No.',
   'I am the one who knocks!'
 ];
+
+const totalBatteries = batteryBatches.reduce( (total, value) => total + value, 0);
+
+const wordCountMap = monologueLines.reduce((map, line) => {
+  const wordCount = line.split(" ").length;
+
+  if (!map[wordCount]) {
+    map[wordCount] = 0;
+  }
+
+  map[wordCount]++;
+
+  return map;
+}, {})
