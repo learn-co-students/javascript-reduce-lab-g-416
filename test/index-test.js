@@ -22,9 +22,9 @@ describe("reducers", function () {
       expect(wordCountMap).toBeAn("object");
     });
 
-    // it('should have made the correct word count for all sentences', function() {
-    //   const expectedOutput = { '1': 2, '4': 1, '6': 3, '7': 2, '9': 1, '11': 1, '14': 1, '15': 3 };
-    //   expect(JSON.stringify(wordCountMap)).toEqual(JSON.stringify(expectedOutput));
-    // });
+    it('should have made the correct word count for all sentences', function() {
+      const expectedOutput = { '1': 2, '4': 1, '6': 3, '7': 2, '9': 1, '11': 1, '14': 1, '15': 3 };
+      expect(JSON.stringify(wordCountMap)).toEqual(JSON.stringify(expectedOutput));
+    });
   });
 });

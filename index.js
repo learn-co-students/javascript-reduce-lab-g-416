@@ -20,14 +20,15 @@ const monologueLines = [
 const totalBatteries = batteryBatches.reduce((total, batteryBatch) => {
   return total + batteryBatch;
 });
-console.log(totalBatteries);
 
-const wordCountMap = monologueLines.reduce((newArray, line) => {
-  // object with number and amount of
-  const wordCount = {};
-  const splitLine = line.split(" ");
-  splitLine.reduce((total, word) => {
-    return total + 1;
-  });
-  return wordCount;
+const wordCountMap = monologueLines.reduce((map, line) => {
+  const wordCount = line.split(" ").length;
+
+  if (!map[wordCount]) {
+    map[wordCount] = 0;
+  }
+
+  map[wordCount]++;
+
+  return map;
 });
