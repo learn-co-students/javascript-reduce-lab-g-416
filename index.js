@@ -31,4 +31,4 @@ const wordCountMap = monologueLines.reduce((map, line) => {
   map[wordCount]++;
 
   return map;
-});
+}, {});
