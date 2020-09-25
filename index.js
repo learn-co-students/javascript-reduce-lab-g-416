@@ -19,13 +19,12 @@ const monologueLines = [
 
 let totalBatteries = batteryBatches.reduce((n, batch) => n + batch ,0)
 
-let wordCountMap = monologueLines.reduce((count ,sentence) => {
+let wordCountMap = monologueLines.reduce((obj, sentence) => {
     let wordCount = sentence.split(' ').length;
 
-    if (!count[wordCount]){
-      count[wordCount] = 0
+    if (!obj[wordCount]){
+      obj[wordCount] = 0
     }
-
-    count[wordCount] ++;
-    return count
+    obj[wordCount] ++;
+    return obj;
 }, {})
