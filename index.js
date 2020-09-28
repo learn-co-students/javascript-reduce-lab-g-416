@@ -22,9 +22,7 @@ const monologueLines = [
 // }
 let totalBatteries = batteryBatches.reduce((total, batch) => total + batch, 0);
 //{ '7': 2, '9': 1 }
-// number of words
-// how many sentences have those amount of words
-//use length property 
+
 const wordCountMap = monologueLines.reduce((map, sentence) => {
   const wordCount = sentence.split(' ').length;
 
