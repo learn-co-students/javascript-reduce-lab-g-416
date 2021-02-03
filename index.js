@@ -22,8 +22,12 @@ let totalBatteries=batteryBatches.reduce((totalAmount,currentValue)=>(totalAmoun
 
 let wordCountMap=monologueLines.reduce(function(accumulator, currentValue){
 accumulator={}
-let wordCount=currentValue.split
-if(accumulator.hasOwnProperty(`${currentValue.split(" ").length}`){
-
+let wordCount=currentValue..match(/(\w+)/g).length
+if(accumulator.hasOwnProperty(wordCount)){
+accumulator.wordCount=accumulator.wordCount++
 }
+else{
+  accumulator.wordCount=1
+}
+return accumulator
 })
