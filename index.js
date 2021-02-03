@@ -21,6 +21,9 @@ const monologueLines = [
 let totalBatteries=batteryBatches.reduce((totalAmount,currentValue)=>(totalAmount+currentValue))
 
 let wordCountMap=monologueLines.reduce(function(accumulator, currentValue){
-accumulator[currentValue.split(" ".length)]
-  return accumulator
+accumulator={}
+let wordCount=currentValue.split
+if(accumulator.hasOwnProperty(`${currentValue.split(" ").length}`){
+
+}
 })
